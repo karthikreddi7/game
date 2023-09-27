@@ -18,7 +18,7 @@ const clue = "naluguriki sahayam cheddam";
 
 // Manually provide YouTube links for male and female players
 const maleVideoUrl = "https://www.youtube.com/embed/q2mt5XNgFVE";
-const femaleVideoUrl = "https://www.youtube.com/embed/Q8FUQawC_1I";
+const femaleVideoUrl = "https://www.youtube.com/embed/dOKQeqGNJwY";
 
 clueIconElement.addEventListener("mouseenter", () => {
     // Change cursor to a hand click symbol when mouse is over the clue icon
