@@ -1,3 +1,29 @@
+// Function to share the game on Twitter (Web)
+function shareOnTwitterWeb() {
+    const shareUrl = "https://twitter.com/intent/tweet?text=I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?&url=" + window.location.href;
+    window.open(shareUrl, "_blank");
+}
+
+
+// Function to share the game on Instagram (Web)
+function shareOnInstagramWeb() {
+    // You can provide a message or caption for Instagram sharing here
+    const shareMessage = "I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
+    alert("Instagram sharing is limited on web browsers. Please share manually: " + shareMessage);
+}
+
+
+// Function to share the game on Facebook (Web)
+function shareOnFacebookWeb() {
+    const shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + window.location.href;
+    window.open(shareUrl, "_blank");
+}
+
+// Add event listeners to social media icons for web sharing
+document.getElementById("twitter-icon").addEventListener("click", shareOnTwitterWeb);
+document.getElementById("instagram-icon").addEventListener("click", shareOnInstagramWeb);
+document.getElementById("facebook-icon").addEventListener("click", shareOnFacebookWeb);
+
 const heroInitialElement = document.getElementById("hero-initial");
 const heroineInitialElement = document.getElementById("heroine-initial");
 const movieNameInitialElement = document.getElementById("movie-name-initial");
@@ -10,17 +36,16 @@ const correctSound = document.getElementById("correctSound");
 const incorrectSound = document.getElementById("incorrectSound");
 const aboutIcon = document.getElementById("about-icon");
 const aboutDescription = document.getElementById("about-description");
-
 // Replace these placeholders with actual values
 const initialHero = "R";
 const initialHeroine = "H";
 const initialMovieName = "K";
 const correctAnswer = "kandireega";
 const clue = "ABCDEF uu seenu gadu maha toughuuu";
-
 // Manually provide YouTube links for male and female players
 const maleVideoUrl = "https://www.youtube.com/embed/QCTtc36u-Kk";
 const femaleVideoUrl = "https://www.youtube.com/embed/v0i2KyLzXzQ";
+
 let attempts = 4;
 
 clueIconElement.addEventListener("mouseenter", () => {
@@ -52,6 +77,8 @@ aboutIcon.addEventListener("click", () => {
         aboutDescription.style.display = "none";
     }
 });
+
+
 
 submitButton.addEventListener("click", () => {
     const userGuess = guessInput.value.trim().toLowerCase();

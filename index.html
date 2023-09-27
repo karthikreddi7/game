@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="gamecss.css">
 </head>
 <body>
+
     <div class="game-container">
         <marquee behavior="scroll" direction="left" scrollamount="4">
             This game is still under development. More features will be added soon.
@@ -20,6 +21,7 @@
             <p>Heroine: <span id="heroine-initial">H</span></p>
             <p>Movie Name: <span id="movie-name-initial">K _ _ _ _ _ _ _ _ _</span></p>
         </div>
+       
         <div class="inputs">
             <input type="text" id="guess" placeholder="Your Guess">
             <button id="submit">Submit</button>
@@ -34,6 +36,13 @@
                 Your browser does not support the audio element.
             </audio>
         </div>
+        <h2 class="share-title">SHARE</h2>
+        <!-- Add social media icons for sharing -->
+    <div class="share-icons">
+        <a href="#" id="twitter-icon" class="share-icon" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#" id="instagram-icon" class="share-icon" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#" id="facebook-icon" class="share-icon" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+    </div>
         <div class="result" id="result"></div>
         <span id="about-icon" class="about-icon">&#63;(click to know about the game)</span>
         <div id="about-description" class="about-description" style="display: none;">
@@ -45,6 +54,7 @@
             A new movie name will be updated every 24 hours.
         </marquee>
     </div>
+
     <script src="gamejs.js"></script>
 </body>
 </html>

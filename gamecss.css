@@ -152,4 +152,37 @@ marquee {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+/* ... (your existing CSS code) ... */
+
+/* Add styles for the SHARE title */
+.share-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Social media share icons below the game container */
+.share-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.share-icon {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.share-icon img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+}
+
+.share-icon:hover {
+    transform: scale(1.2); /* Add a hover effect to enlarge the icons */
+}
+
+
 /* Add styles for scrolling text at the bottom */
