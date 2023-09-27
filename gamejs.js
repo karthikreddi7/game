@@ -37,14 +37,14 @@ const incorrectSound = document.getElementById("incorrectSound");
 const aboutIcon = document.getElementById("about-icon");
 const aboutDescription = document.getElementById("about-description");
 // Replace these placeholders with actual values
-const initialHero = "R";
-const initialHeroine = "H";
-const initialMovieName = "K";
-const correctAnswer = "kandireega";
-const clue = "ABCDEF uu seenu gadu maha toughuuu";
+const initialHero = "N";
+const initialHeroine = "Y";
+const initialMovieName = "C";
+const correctAnswer = "courier boy kalyan";
+const clue = "DTDC,Blue dart,Fed ex etc.";
 // Manually provide YouTube links for male and female players
-const maleVideoUrl = "https://www.youtube.com/embed/QCTtc36u-Kk";
-const femaleVideoUrl = "https://www.youtube.com/embed/v0i2KyLzXzQ";
+const maleVideoUrl = "https://www.youtube.com/embed/IjqEuyYQXk0";
+const femaleVideoUrl = "https://www.youtube.com/embed/K6AMgkHZFXQ";
 
 let attempts = 4;
 
@@ -88,9 +88,9 @@ submitButton.addEventListener("click", () => {
         correctSound.play();
 
         // Reveal all letters for hero, heroine, and movie name
-        heroInitialElement.textContent = initialHero + "am pothineni";
-        heroineInitialElement.textContent = initialHeroine + "ansika";
-        movieNameInitialElement.textContent = initialMovieName + "andireega";
+        heroInitialElement.textContent = initialHero + "ithin";
+        heroineInitialElement.textContent = initialHeroine + "ami gautham";
+        movieNameInitialElement.textContent = initialMovieName + "ourier boy kalyan";
 
         // Update the result message
         resultElement.textContent = "Congratulations! You guessed it correctly.";
@@ -136,9 +136,9 @@ submitButton.addEventListener("click", () => {
 
         if (attempts === 0) {
             // No more attempts left, display the answers and a message
-            heroInitialElement.textContent = initialHero + "am pothineni";
-            heroineInitialElement.textContent = initialHeroine + "ansika";
-            movieNameInitialElement.textContent = initialMovieName + "andireega";
+            heroInitialElement.textContent = initialHero + "ithin";
+            heroineInitialElement.textContent = initialHeroine + "ami gautham";
+            movieNameInitialElement.textContent = initialMovieName + "ourier boy kalyan";
             resultElement.textContent = "You lost. Better luck tomorrow!";
             resultElement.style.color = "red";
             submitButton.disabled = true; // Disable the submit button
