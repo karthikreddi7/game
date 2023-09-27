@@ -19,6 +19,7 @@ const clue = "ABCDEF uu seenu gadu maha tuffu";
 // Manually provide YouTube links for male and female players
 const maleVideoUrl = "https://www.youtube.com/embed/QCTtc36u-Kk";
 const femaleVideoUrl = "https://www.youtube.com/embed/v0i2KyLzXzQ";
+let attempts=4;
 
 clueIconElement.addEventListener("mouseenter", () => {
     // Change cursor to a hand click symbol when mouse is over the clue icon
