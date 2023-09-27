@@ -39,7 +39,7 @@ clueIconElement.addEventListener("click", () => {
     } else {
         // Hide the clue text and change the icon back to the search symbol
         clueTextElement.style.display = "none";
-        clueIconElement.textContent = "🔍";
+        clueIconElement.textContent = "🔍(click on this)";
     }
 });
 
@@ -99,9 +99,9 @@ submitButton.addEventListener("click", () => {
 
         if (attempts === 0) {
             // No more attempts left, display the answers and a message
-            heroInitialElement.textContent = initialHero + "hiranjeevi";
-            heroineInitialElement.textContent = initialHeroine + "risha";
-            movieNameInitialElement.textContent = initialMovieName + "talin";
+            heroInitialElement.textContent = initialHero + "am pothineni";
+            heroineInitialElement.textContent = initialHeroine + "ansika";
+            movieNameInitialElement.textContent = initialMovieName + "andireega";
             resultElement.textContent = "You lost. Better luck tomorrow!";
             resultElement.style.color = "red";
             submitButton.disabled = true; // Disable the submit button
