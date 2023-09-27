@@ -12,7 +12,7 @@ const incorrectSound = document.getElementById("incorrectSound");
 // Replace these placeholders with actual values
 const initialHero = "R";
 const initialHeroine = "H";
-const initialMovieName = "K";
+const initialMovieName = "K _ _ _ _ _ _ _ _ _";
 const correctAnswer = "kandireega";
 const clue = "ABCDEF uu seenu gadu maha tuffu";
 
