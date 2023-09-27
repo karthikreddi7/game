@@ -60,7 +60,7 @@ submitButton.addEventListener("click", () => {
 
         // Prompt the player for their gender after a brief delay
         setTimeout(() => {
-            const playerGender = prompt("Congratulations! You guessed correctly. Please enter your gender (Male/Female):");
+            const playerGender = prompt("Congratulations! You guessed correctly. Please enter your gender (Male/Female) and we will dedicate a song for you:");
 
             if (playerGender !== null) {
                 let youtubeVideoUrl = "";
@@ -74,7 +74,7 @@ submitButton.addEventListener("click", () => {
                 }
 
                 // Display the dedication message
-                resultElement.textContent = "This song is dedicated for you (" + playerGender + ")";
+                resultElement.textContent = "This song is dedicated for you";
                 resultElement.style.color = "green";
 
                 if (youtubeVideoUrl !== "") {
