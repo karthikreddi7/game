@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE FLICK</title>
+    <link rel="stylesheet" href="gamecss.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>GUESS THE FLICK</h1>
+        <div class="clue-container">
+            <p>Clue: <span id="clue-text" style="display: none;">naluguriki sahayam cheddam</span> <span id="clue-icon" class="clue-closed">🔍</span></p>
+        </div>
+        <div class="initial-letters">
+            <p>Hero: <span id="hero-initial">C</span></p>
+            <p>Heroine: <span id="heroine-initial">T</span></p>
+            <p>Movie Name: <span id="movie-name-initial">S</span></p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="guess" placeholder="Your Guess">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="button-container">
+            <audio id="correctSound">
+                <source src="correct.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="incorrectSound">
+                <source src="incorrect.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="gamejs.js"></script>
+</body>
+</html>
