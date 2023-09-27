@@ -8,18 +8,20 @@ const clueTextElement = document.getElementById("clue-text");
 const clueIconElement = document.getElementById("clue-icon");
 const correctSound = document.getElementById("correctSound");
 const incorrectSound = document.getElementById("incorrectSound");
+const aboutIcon = document.getElementById("about-icon");
+const aboutDescription = document.getElementById("about-description");
 
 // Replace these placeholders with actual values
 const initialHero = "R";
 const initialHeroine = "H";
 const initialMovieName = "K";
 const correctAnswer = "kandireega";
-const clue = "ABCDEF uu seenu gadu maha tuffu";
+const clue = "ABCDEF uu seenu gadu maha toughuuu";
 
 // Manually provide YouTube links for male and female players
 const maleVideoUrl = "https://www.youtube.com/embed/QCTtc36u-Kk";
 const femaleVideoUrl = "https://www.youtube.com/embed/v0i2KyLzXzQ";
-let attempts=4;
+let attempts = 4;
 
 clueIconElement.addEventListener("mouseenter", () => {
     // Change cursor to a hand click symbol when mouse is over the clue icon
@@ -40,6 +42,14 @@ clueIconElement.addEventListener("click", () => {
         // Hide the clue text and change the icon back to the search symbol
         clueTextElement.style.display = "none";
         clueIconElement.textContent = "🔍(click on this)";
+    }
+});
+
+aboutIcon.addEventListener("click", () => {
+    if (aboutDescription.style.display === "none" || aboutDescription.style.display === "") {
+        aboutDescription.style.display = "block";
+    } else {
+        aboutDescription.style.display = "none";
     }
 });
 

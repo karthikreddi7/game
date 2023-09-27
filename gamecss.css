@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('bg.webp'); /* Replace 'background.jpg' with the path to your background image */
+    background-image: url('bg4.jpg'); /* Replace 'background.jpg' with the path to your background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12,7 +12,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 
 .game-container {
     background-color: #c8d0c8;
@@ -96,6 +95,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
 /* Add styles for fireworks effect */
 .fireworks-container {
     position: fixed;
@@ -130,3 +130,30 @@ button:hover {
     }
 }
 
+/* Add styles for scrolling text */
+marquee {
+    font-weight: bold;
+    color: #21201f; /* Adjust the color as needed */
+}
+
+.about-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #6f1010;
+}
+
+.about-icon:hover(0,1,1){
+    background-color:#211f1f;
+}
+
+.about-description {
+    margin-top: 20px;
+    display: none;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add styles for scrolling text at the bottom */

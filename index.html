@@ -8,6 +8,9 @@
 </head>
 <body>
     <div class="game-container">
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+            This game is still under development. More features will be added soon.
+        </marquee>
         <h1>GUESS THE FLICK</h1>
         <div class="clue-container">
             <p>Clue: <span id="clue-text" style="display: none;">ABCDEF uu seenu gadu maha toughuuu</span> <span id="clue-icon" class="clue-closed">🔍</span></p>
@@ -32,6 +35,15 @@
             </audio>
         </div>
         <div class="result" id="result"></div>
+        <span id="about-icon" class="about-icon">&#63;(click to know about the game)</span>
+        <div id="about-description" class="about-description" style="display: none;">
+            <p>How to Play:</p>
+            <p>Guess the hero, heroine, and movie name based on the provided clues.</p>
+            <p>You have four attempts to guess the movie name.</p>
+        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+            A new movie name will be updated every 24 hours.
+        </marquee>
     </div>
     <script src="gamejs.js"></script>
 </body>
