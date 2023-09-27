@@ -10,15 +10,15 @@ const correctSound = document.getElementById("correctSound");
 const incorrectSound = document.getElementById("incorrectSound");
 
 // Replace these placeholders with actual values
-const initialHero = "C";
-const initialHeroine = "T";
-const initialMovieName = "S";
-const correctAnswer = "stalin";
-const clue = "naluguriki sahayam cheddam";
+const initialHero = "R";
+const initialHeroine = "H";
+const initialMovieName = "K";
+const correctAnswer = "kandireega";
+const clue = "ABCDEF uu seenu gadu maha tuffu";
 
 // Manually provide YouTube links for male and female players
-const maleVideoUrl = "https://www.youtube.com/embed/q2mt5XNgFVE";
-const femaleVideoUrl = "https://www.youtube.com/embed/dOKQeqGNJwY";
+const maleVideoUrl = "https://www.youtube.com/embed/QCTtc36u-Kk";
+const femaleVideoUrl = "https://www.youtube.com/embed/v0i2KyLzXzQ";
 
 clueIconElement.addEventListener("mouseenter", () => {
     // Change cursor to a hand click symbol when mouse is over the clue icon
@@ -50,9 +50,9 @@ submitButton.addEventListener("click", () => {
         correctSound.play();
 
         // Reveal all letters for hero, heroine, and movie name
-        heroInitialElement.textContent = initialHero + "hiranjeevi";
-        heroineInitialElement.textContent = initialHeroine + "risha";
-        movieNameInitialElement.textContent = initialMovieName + "talin";
+        heroInitialElement.textContent = initialHero + "am pothineni";
+        heroineInitialElement.textContent = initialHeroine + "ansika";
+        movieNameInitialElement.textContent = initialMovieName + "andireega";
 
         // Update the result message
         resultElement.textContent = "Congratulations! You guessed it correctly.";
