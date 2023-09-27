@@ -142,10 +142,6 @@ marquee {
     color: #6f1010;
 }
 
-.about-icon:hover(0,1,1){
-    background-color:#211f1f;
-}
-
 .about-description {
     margin-top: 20px;
     display: none;
