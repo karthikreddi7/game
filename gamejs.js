@@ -30,7 +30,7 @@ function playCelebrationVideo() {
 // Function to share on Twitter
 function shareOnTwitter() {
     // Define the sharing message
-    const shareMessage = "I guessed the movie name in " + (4 - attempts) + " attempts! Can you beat me? #MovieGuessingGame";
+    const shareMessage = "Guess the flick Day 1:-I guessed the movie name in " + (4 - attempts) + " attempts! Can you beat me? #MovieGuessingGame";
 
     // Twitter sharing URL
     const twitterShareUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareMessage);
