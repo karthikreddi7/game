@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="gamecss.css">
 </head>
 <body>
-
+    <div class="celebration-overlay" id="celebrationOverlay">
+        <video autoplay muted>
+            <source src="celebration.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <div class="game-container">
         <marquee behavior="scroll" direction="left" scrollamount="4">
             This game is still under development. More features will be added soon.
         </marquee>
         <h1>GUESS THE FLICK</h1>
         <div class="clue-container">
-            <p>Clue: <span id="clue-text" style="display: none;">DTDC,Blue dart,Fed ex etc.</span> <span id="clue-icon" class="clue-closed">🔍</span></p>
+            <p>Clue: <span id="clue-text" style="display: none;">DTDC, Blue dart, Fed ex etc.</span> <span id="clue-icon" class="clue-closed">🔍</span></p>
         </div>
         <div class="initial-letters">
             <p>Hero: <span id="hero-initial">N</span></p>
             <p>Heroine: <span id="heroine-initial">Y</span></p>
             <p>Movie Name: <span id="movie-name-initial">C</span></p>
         </div>
-       
         <div class="inputs">
             <input type="text" id="guess" placeholder="Your Guess">
             <button id="submit">Submit</button>
@@ -38,11 +42,11 @@
         </div>
         <h2 class="share-title">SHARE</h2>
         <!-- Add social media icons for sharing -->
-    <div class="share-icons">
-        <a href="#" id="twitter-icon" class="share-icon" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="#" id="instagram-icon" class="share-icon" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-        <a href="#" id="facebook-icon" class="share-icon" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-    </div>
+        <div class="share-icons">
+            <a href="#" id="twitter-icon" class="share-icon" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" id="instagram-icon" class="share-icon" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" id="facebook-icon" class="share-icon" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+        </div>
         <div class="result" id="result"></div>
         <span id="about-icon" class="about-icon">&#63;(click to know about the game)</span>
         <div id="about-description" class="about-description" style="display: none;">
@@ -54,7 +58,6 @@
             A new movie name will be updated every 24 hours.
         </marquee>
     </div>
-
     <script src="gamejs.js"></script>
 </body>
 </html>
