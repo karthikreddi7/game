@@ -27,10 +27,29 @@ function playCelebrationVideo() {
     }
 }
 
-// Function to share the game on Twitter (Web)
-function shareOnTwitterWeb() {
-    const shareUrl = "https://twitter.com/intent/tweet?text=Guess the flick Day 1:I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?&url=" + window.location.href;
-    window.open(shareUrl, "_blank");
+// Function to share on Twitter
+function shareOnTwitter() {
+    // Define the sharing message
+    const shareMessage = "I guessed the movie name in " + (4 - attempts) + " attempts! Can you beat me? #MovieGuessingGame";
+
+    // Twitter sharing URL
+    const twitterShareUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareMessage);
+
+    // Check if the user is on an iOS or Android device
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isAndroid = /Android/.test(navigator.userAgent);
+
+    // Determine whether to open in-app or in a browser
+    if (isIOS) {
+        // Open in the Twitter app on iOS if available
+        window.location.href = "twitter://post?message=" + encodeURIComponent(shareMessage);
+    } else if (isAndroid) {
+        // Open in the Twitter app on Android if available
+        window.location.href = "twitter://post?message=" + encodeURIComponent(shareMessage);
+    } else {
+        // Open in a browser if not on iOS or Android
+        window.open(twitterShareUrl);
+    }
 }
 
 // Function to share the game on Instagram (Web)
@@ -46,10 +65,12 @@ function shareOnFacebookWeb() {
     window.open(shareUrl, "_blank");
 }
 
-// Add event listeners to social media icons for web sharing
-document.getElementById("twitter-icon").addEventListener("click", shareOnTwitterWeb);
 document.getElementById("instagram-icon").addEventListener("click", shareOnInstagramWeb);
 document.getElementById("facebook-icon").addEventListener("click", shareOnFacebookWeb);
+
+// Attach the shareOnTwitter function to the Twitter share button click event
+const twitterShareButton = document.getElementById("twitter-icon");
+twitterShareButton.addEventListener("click", shareOnTwitter);
 
 const heroInitialElement = document.getElementById("hero-initial");
 const heroineInitialElement = document.getElementById("heroine-initial");
