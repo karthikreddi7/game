@@ -1,31 +1,3 @@
-// Initialize a variable to track whether the celebration video has been played
-let celebrationVideoPlayed = false;
-
-// Function to play the celebration video
-function playCelebrationVideo() {
-    if (!celebrationVideoPlayed) {
-        // Get the video element and the overlay by their IDs
-        const celebrationVideo = document.querySelector("#celebrationOverlay video");
-        const celebrationOverlay = document.getElementById("celebrationOverlay");
-
-        // Set the source of the video element to your celebration video file
-        celebrationVideo.src = "celebration.mp4"; // Replace with your video file's name and path
-
-        // Play the video
-        celebrationVideo.play();
-
-        // Show the celebration overlay
-        celebrationOverlay.style.display = "flex";
-
-        // Set the variable to true to prevent playing the video again
-        celebrationVideoPlayed = true;
-
-        // Add an event listener to hide the overlay when the video ends
-        celebrationVideo.addEventListener("ended", () => {
-            celebrationOverlay.style.display = "none";
-        });
-    }
-}
 
 // Function to share on Twitter
 function shareOnTwitter() {
@@ -168,9 +140,6 @@ submitButton.addEventListener("click", () => {
         // Update the result message
         resultElement.textContent = "Congratulations! You guessed it correctly.";
         resultElement.style.color = "green";
-
-        // Play the celebration video
-        playCelebrationVideo();
 
 
         // Prompt the player for their gender after a brief delay
