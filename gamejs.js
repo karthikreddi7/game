@@ -1,6 +1,6 @@
 // Function to share the game on Twitter (Web)
 function shareOnTwitterWeb() {
-    const shareUrl = "https://twitter.com/intent/tweet?text=I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?&url=" + window.location.href;
+    const shareUrl = "https://twitter.com/intent/tweet?text=Guess the flick Day 1 I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?&url=" + window.location.href;
     window.open(shareUrl, "_blank");
 }
 
@@ -8,7 +8,7 @@ function shareOnTwitterWeb() {
 // Function to share the game on Instagram (Web)
 function shareOnInstagramWeb() {
     // You can provide a message or caption for Instagram sharing here
-    const shareMessage = "I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
+    const shareMessage = "Guess the flick Day 1-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
     alert("Instagram sharing is limited on web browsers. Please share manually: " + shareMessage);
 }
 
