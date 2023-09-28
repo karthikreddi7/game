@@ -1,6 +1,6 @@
 // Function to share the game on Twitter (Web)
 function shareOnTwitterWeb() {
-    const shareUrl = "https://twitter.com/intent/tweet?text=Guess the flick Day 1 I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?&url=" + window.location.href;
+    const shareUrl = "https://twitter.com/intent/tweet?text=Guess the flick Day 1:I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?&url=" + window.location.href;
     window.open(shareUrl, "_blank");
 }
 
