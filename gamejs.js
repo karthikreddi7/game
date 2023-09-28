@@ -2,7 +2,7 @@
 // Function to share on Twitter
 function shareOnTwitter() {
     // Define the sharing message
-    const shareMessage = "Guess the flick Day 1:-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat me? #GuessTheFlick               https://guess-the-flick.netlify.app/";
+    const shareMessage = "Guess the flick Day 2:-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat me? #GuessTheFlick                                         https://guess-the-flick.netlify.app/";
 
     // Twitter sharing URL
     const twitterShareUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareMessage);
@@ -27,7 +27,7 @@ function shareOnTwitter() {
 // Function to share the game on Instagram (Web)
 function shareOnInstagramWeb() {
     // You can provide a message or caption for Instagram sharing here
-    const shareMessage = "Guess the flick Day 1-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
+    const shareMessage = "Guess the flick Day 2-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
     alert("Instagram sharing is limited on web browsers. Please share manually: " + shareMessage);
 }
 
