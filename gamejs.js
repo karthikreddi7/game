@@ -4,14 +4,12 @@ function shareOnTwitterWeb() {
     window.open(shareUrl, "_blank");
 }
 
-
 // Function to share the game on Instagram (Web)
 function shareOnInstagramWeb() {
     // You can provide a message or caption for Instagram sharing here
     const shareMessage = "Guess the flick Day 1-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
     alert("Instagram sharing is limited on web browsers. Please share manually: " + shareMessage);
 }
-
 
 // Function to share the game on Facebook (Web)
 function shareOnFacebookWeb() {
@@ -78,12 +76,36 @@ aboutIcon.addEventListener("click", () => {
     }
 });
 
-
-
 submitButton.addEventListener("click", () => {
     const userGuess = guessInput.value.trim().toLowerCase();
 
-    if (userGuess === correctAnswer.toLowerCase()) {
+    // Calculate the Levenshtein distance between the user's guess and the correct answer
+    function levenshteinDistance(str1, str2) {
+        const m = str1.length;
+        const n = str2.length;
+        const dp = new Array(m + 1).fill(null).map(() => new Array(n + 1).fill(0));
+
+        for (let i = 0; i <= m; i++) {
+            for (let j = 0; j <= n; j++) {
+                if (i === 0) {
+                    dp[i][j] = j;
+                } else if (j === 0) {
+                    dp[i][j] = i;
+                } else if (str1[i - 1] === str2[j - 1]) {
+                    dp[i][j] = dp[i - 1][j - 1];
+                } else {
+                    dp[i][j] = 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+                }
+            }
+        }
+
+        return dp[m][n];
+    }
+
+    // Calculate the Levenshtein distance between the user's guess and the correct answer
+    const distance = levenshteinDistance(userGuess, correctAnswer.toLowerCase());
+
+    if (distance <= 2) { // You can adjust the distance threshold as needed
         // Play the correct sound
         correctSound.play();
 
