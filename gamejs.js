@@ -61,7 +61,7 @@ const aboutDescription = document.getElementById("about-description");
 const initialHero = "S";
 const initialHeroine = "S";
 const initialMovieName = "A";
-const correctAnswer = "Anaga Anaga oka Dheerudu";
+const correctAnswer = "Anaga Anaga O Dheerudu";
 const clue = "Nimma dhanimma kanipinchindha jejamma";
 // Manually provide YouTube links for male and female players
 const maleVideoUrl = "https://www.youtube.com/embed/CiOq8mfMHNc";
@@ -128,14 +128,14 @@ submitButton.addEventListener("click", () => {
     // Calculate the Levenshtein distance between the user's guess and the correct answer
     const distance = levenshteinDistance(userGuess, correctAnswer.toLowerCase());
 
-    if (distance <= 2) { // You can adjust the distance threshold as needed
+    if (distance <= 4) { // You can adjust the distance threshold as needed
         // Play the correct sound
         correctSound.play();
 
         // Reveal all letters for hero, heroine, and movie name
         heroInitialElement.textContent = initialHero + "iddarth";
         heroineInitialElement.textContent = initialHeroine + "hruti haasan";
-        movieNameInitialElement.textContent = initialMovieName + "naga Anaga oka Dheerudu";
+        movieNameInitialElement.textContent = initialMovieName + "naga Anaga O Dheerudu";
 
         // Update the result message
         resultElement.textContent = "Congratulations! You guessed it correctly.";
@@ -184,7 +184,7 @@ submitButton.addEventListener("click", () => {
             // No more attempts left, display the answers and a message
             heroInitialElement.textContent = initialHero + "iddarth";
             heroineInitialElement.textContent = initialHeroine + "hruti haasan";
-            movieNameInitialElement.textContent = initialMovieName + "naga Anaga oka Dheerudu";
+            movieNameInitialElement.textContent = initialMovieName + "naga Anaga O Dheerudu";
             resultElement.textContent = "You lost. Better luck tomorrow!";
             resultElement.style.color = "red";
             submitButton.disabled = true; // Disable the submit button
