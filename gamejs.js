@@ -1,14 +1,15 @@
 
+
 // Function to share on Twitter
 function shareOnTwitter() {
     let shareMessage;
     
     if (attempts === 0) {
         // If no attempts left, display a failure message
-        shareMessage = "Guess the flick Day 3:-I failed to guess the movie name in 4 attempts! Can you do better?  #GuessTheFlick  https://guess-the-flick.netlify.app/";
+        shareMessage = "Guess the flick Day 4:-I failed to guess the movie name in 4 attempts! Can you do better?  #GuessTheFlick  https://guess-the-flick.netlify.app/";
     } else {
     // Define the sharing message
-        shareMessage = "Guess the flick Day 3:-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat me? #GuessTheFlick  https://guess-the-flick.netlify.app/";
+        shareMessage = "Guess the flick Day 4:-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat me? #GuessTheFlick  https://guess-the-flick.netlify.app/";
     }
 
     // Twitter sharing URL
@@ -34,7 +35,7 @@ function shareOnTwitter() {
 // Function to share the game on Instagram (Web)
 function shareOnInstagramWeb() {
     // You can provide a message or caption for Instagram sharing here
-    const shareMessage = "Guess the flick Day 2-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
+    const shareMessage = "Guess the flick Day 4-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
     alert("Instagram sharing is limited on web browsers. Please share manually: " + shareMessage);
 }
 
@@ -51,6 +52,8 @@ document.getElementById("facebook-icon").addEventListener("click", shareOnFacebo
 const twitterShareButton = document.getElementById("twitter-icon");
 twitterShareButton.addEventListener("click", shareOnTwitter);
 
+
+
 const heroInitialElement = document.getElementById("hero-initial");
 const heroineInitialElement = document.getElementById("heroine-initial");
 const movieNameInitialElement = document.getElementById("movie-name-initial");
@@ -65,11 +68,11 @@ const aboutIcon = document.getElementById("about-icon");
 const aboutDescription = document.getElementById("about-description");
 
 // Replace these placeholders with actual values
-const initialHero = "A";
-const initialHeroine = "R";
-const initialMovieName = "K";
-const correctAnswer = "Kotha janta";
-const clue = "Hero works for a TV channel";
+const initialHero = "S";
+const initialHeroine = "S";
+const initialMovieName = "G";
+const correctAnswer = "Golconda high school";
+const clue = "Hero plays the role of a coach ";
 // Manually provide YouTube links for male and female players
 const maleVideoUrl = "https://www.youtube.com/embed/yXGdFDyTjDc";
 const femaleVideoUrl = "https://www.youtube.com/embed/-Dvn4OPgRJA";
@@ -140,9 +143,9 @@ submitButton.addEventListener("click", () => {
         correctSound.play();
 
         // Reveal all letters for hero, heroine, and movie name
-        heroInitialElement.textContent = initialHero + "llu sirish";
-        heroineInitialElement.textContent = initialHeroine + "egina cassandra";
-        movieNameInitialElement.textContent = initialMovieName + "otha janta";
+        heroInitialElement.textContent = initialHero + "umanth";
+        heroineInitialElement.textContent = initialHeroine + "wathi";
+        movieNameInitialElement.textContent = initialMovieName + "olconda high school";
 
         // Update the result message
         resultElement.textContent = "Congratulations! You guessed it correctly.";
@@ -189,9 +192,9 @@ submitButton.addEventListener("click", () => {
 
         if (attempts === 0) {
             // No more attempts left, display the answers and a message
-            heroInitialElement.textContent = initialHero + "llu sirish";
-            heroineInitialElement.textContent = initialHeroine + "egina cassandra";
-            movieNameInitialElement.textContent = initialMovieName + "otha janta";
+            heroInitialElement.textContent = initialHero + "umanth";
+            heroineInitialElement.textContent = initialHeroine + "wathi";
+            movieNameInitialElement.textContent = initialMovieName + "olconda high school";
             resultElement.textContent = "You lost. Better luck tomorrow!";
             resultElement.style.color = "red";
             submitButton.disabled = true; // Disable the submit button
