@@ -72,10 +72,10 @@ const initialHero = "S";
 const initialHeroine = "S";
 const initialMovieName = "G";
 const correctAnswer = "Golconda high school";
-const clue = "Hero plays the role of a coach ";
+const clue = "This movie is named after a legendary diamond mine ";
 // Manually provide YouTube links for male and female players
-const maleVideoUrl = "https://www.youtube.com/embed/yXGdFDyTjDc";
-const femaleVideoUrl = "https://www.youtube.com/embed/-Dvn4OPgRJA";
+const maleVideoUrl = "https://www.youtube.com/embed/6vIazdr0ewk";
+const femaleVideoUrl = "https://www.youtube.com/embed/exFAkV3tYaw";
 
 let attempts = 4;
 
