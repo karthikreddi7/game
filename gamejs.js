@@ -74,8 +74,8 @@ const initialMovieName = "N";
 const correctAnswer = "Naaga";
 const clue = "Music by vidyasagar";
 // Manually provide YouTube links for male and female players
-const maleVideoUrl = "https://www.youtube.com/embed/https://8xigoNs_ss0";
-const femaleVideoUrl = "https://www.youtube.com/embed/https://9OqTuEbRW5M";
+const maleVideoUrl = "https://www.youtube.com/embed/8xigoNs_ss0";
+const femaleVideoUrl = "https://www.youtube.com/embed/9OqTuEbRW5M";
 
 let attempts = 4;
 
