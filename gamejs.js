@@ -68,14 +68,14 @@ const aboutIcon = document.getElementById("about-icon");
 const aboutDescription = document.getElementById("about-description");
 
 // Replace these placeholders with actual values
-const initialHero = "T";
-const initialHeroine = "K";
-const initialMovieName = "T";
-const correctAnswer = "Thallumaala";
-const clue = "kottu chithakakottu maamuluga ivvanu expressions";
+const initialHero = "N";
+const initialHeroine = "S";
+const initialMovieName = "N";
+const correctAnswer = "Naaga";
+const clue = "Music by vidyasagar";
 // Manually provide YouTube links for male and female players
-const maleVideoUrl = "https://www.youtube.com/embed/FK8XOqGlNRA";
-const femaleVideoUrl = "https://www.youtube.com/embed/FK8XOqGlNRA";
+const maleVideoUrl = "https://www.youtube.com/embed/https://8xigoNs_ss0";
+const femaleVideoUrl = "https://www.youtube.com/embed/https://9OqTuEbRW5M";
 
 let attempts = 4;
 
@@ -143,9 +143,9 @@ submitButton.addEventListener("click", () => {
         correctSound.play();
 
         // Reveal all letters for hero, heroine, and movie name
-        heroInitialElement.textContent = initialHero + "ovino thomas";
-        heroineInitialElement.textContent = initialHeroine + "alyani priyadarshan";
-        movieNameInitialElement.textContent = initialMovieName + "hallumaala";
+        heroInitialElement.textContent = initialHero + "TR";
+        heroineInitialElement.textContent = initialHeroine + "adha";
+        movieNameInitialElement.textContent = initialMovieName + "aaga";
 
         // Update the result message
         resultElement.textContent = "Congratulations! You guessed it correctly.";
@@ -192,9 +192,9 @@ submitButton.addEventListener("click", () => {
 
         if (attempts === 0) {
             // No more attempts left, display the answers and a message
-            heroInitialElement.textContent = initialHero + "ovino thomas";
-            heroineInitialElement.textContent = initialHeroine + "alyani priyadarshan";
-            movieNameInitialElement.textContent = initialMovieName + "hallumaala";
+            heroInitialElement.textContent = initialHero + "TR";
+            heroineInitialElement.textContent = initialHeroine + "adha";
+            movieNameInitialElement.textContent = initialMovieName + "aaga";
             resultElement.textContent = "You lost. Better luck tomorrow!";
             resultElement.style.color = "red";
             submitButton.disabled = true; // Disable the submit button
