@@ -6,10 +6,10 @@ function shareOnTwitter() {
     
     if (attempts === 0) {
         // If no attempts left, display a failure message
-        shareMessage = "Guess the flick Day 5:-I failed to guess the movie name in 4 attempts! Can you do better?  #GuessTheFlick  https://guess-the-flick.netlify.app/";
+        shareMessage = "Guess the flick Day 7:-I failed to guess the movie name in 4 attempts! Can you do better?  #GuessTheFlick  https://guess-the-flick.netlify.app/";
     } else {
     // Define the sharing message
-        shareMessage = "Guess the flick Day 5:-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat me? #GuessTheFlick  https://guess-the-flick.netlify.app/";
+        shareMessage = "Guess the flick Day 7:-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat me? #GuessTheFlick  https://guess-the-flick.netlify.app/";
     }
 
     // Twitter sharing URL
@@ -35,7 +35,7 @@ function shareOnTwitter() {
 // Function to share the game on Instagram (Web)
 function shareOnInstagramWeb() {
     // You can provide a message or caption for Instagram sharing here
-    const shareMessage = "Guess the flick Day 5-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
+    const shareMessage = "Guess the flick Day 7-I guessed the movie name in " + (4 - attempts + 1) + " attempts! Can you beat my score?";
     alert("Instagram sharing is limited on web browsers. Please share manually: " + shareMessage);
 }
 
@@ -68,14 +68,14 @@ const aboutIcon = document.getElementById("about-icon");
 const aboutDescription = document.getElementById("about-description");
 
 // Replace these placeholders with actual values
-const initialHero = "V";
-const initialHeroine = "M";
-const initialMovieName = "S";
-const correctAnswer = "Suryavamsam";
-const clue = "Family";
+const initialHero = "K";
+const initialHeroine = "A";
+const initialMovieName = "D";
+const correctAnswer = "Dasavathaaram";
+const clue = "Nacl(sodium chloride)";
 // Manually provide YouTube links for male and female players
-const maleVideoUrl = "https://www.youtube.com/embed/kbZvYRR3yVc";
-const femaleVideoUrl = "https://www.youtube.com/embed/BYSIhSN4wyw";
+const maleVideoUrl = "https://www.youtube.com/embed/mw4cbFmnqUc";
+const femaleVideoUrl = "https://www.youtube.com/embed/IfHnOxw_N0w";
 
 let attempts = 4;
 
@@ -143,9 +143,9 @@ submitButton.addEventListener("click", () => {
         correctSound.play();
 
         // Reveal all letters for hero, heroine, and movie name
-        heroInitialElement.textContent = initialHero + "enkatesh";
-        heroineInitialElement.textContent = initialHeroine + "eena";
-        movieNameInitialElement.textContent = initialMovieName + "uryavamsam";
+        heroInitialElement.textContent = initialHero + "amal haasan";
+        heroineInitialElement.textContent = initialHeroine + "asin";
+        movieNameInitialElement.textContent = initialMovieName + "asavathaaram";
 
         // Update the result message
         resultElement.textContent = "Congratulations! You guessed it correctly.";
@@ -192,9 +192,9 @@ submitButton.addEventListener("click", () => {
 
         if (attempts === 0) {
             // No more attempts left, display the answers and a message
-            heroInitialElement.textContent = initialHero + "enkatesh";
-            heroineInitialElement.textContent = initialHeroine + "eena";
-            movieNameInitialElement.textContent = initialMovieName + "uryavamsam";
+            heroInitialElement.textContent = initialHero + "amal haasan";
+            heroineInitialElement.textContent = initialHeroine + "asin";
+            movieNameInitialElement.textContent = initialMovieName + "asavathaaram";
             resultElement.textContent = "You lost. Better luck tomorrow!";
             resultElement.style.color = "red";
             submitButton.disabled = true; // Disable the submit button
